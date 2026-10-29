@@ -2,6 +2,11 @@
 
 A dependency plugin that detects RuneScape events and plays sounds supplied by each consumer. The library contains no sound files, settings storage, or UI. Multiple consumers can run together; each gets independent sounds, toggles, volume, and cleanup.
 
+## Credits
+
+Trigger detection logic is adapted from [Devdeve's Boaty Hype Man plugin](https://github.com/Devdeve/boatyHypeMan-RS3-plugin).
+
+
 ## Install and use
 
 Keep `event-sound-library` beside your development plugin and add this manifest entry:
@@ -14,7 +19,7 @@ RuneScape exposes the return value of the dependency's `main.lua` as the alias `
 
 Grant **chatAccess to the library** for chat-based triggers.
 
-Store Ogg Vorbis files in your own plugin's `resources/` directory. This example uses `resources/levelup.ogg`, `resources/death1.ogg`, and `resources/death2.ogg`. Load them in your plugin before registering the sounds:
+Store .ogg files in your own plugin's `resources/` directory. This example uses `resources/levelup.ogg`, `resources/death1.ogg`, and `resources/death2.ogg`. Load them in your plugin before registering the sounds:
 
 ```lua
 local Settings = require("settings")
@@ -91,6 +96,3 @@ Consumers **must call `dispose()` from their shutdown function**; a shared libra
 
 Built-in detectors are defined in `src/triggers.lua`; the playback and registration layer is independent of detection.
 
-## Credits
-
-Trigger detection logic is adapted from [Devdeve's Boaty Hype Man plugin](https://github.com/Devdeve/boatyHypeMan-RS3-plugin).
