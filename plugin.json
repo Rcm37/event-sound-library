@@ -1,0 +1,11 @@
+{
+  "name": "Event Sound Library",
+  "version": "0.1.5",
+  "contactEmailAddress": "rcm37rs@gmail.com",
+  "hasRibbonIcon": false,
+  "hasSettingsIcon": false,
+  "requiredDependencies": {},
+  "optionalDependencies": {},
+  "requiredPermissions": ["chatAccess"],
+  "optionalPermissions": []
+}
