@@ -4,7 +4,7 @@ A dependency plugin that detects RuneScape events and plays sounds supplied by e
 
 ## Credits
 
-Trigger detection logic is adapted from [Devdeve's Boaty Hype Man plugin](https://github.com/Devdeve/boatyHypeMan-RS3-plugin).
+Trigger detection logic is adapted from [Devdeve's Boaty Hype Man plugin](https://github.com/Devdeve/boatyHypeMan-RS3-plugin) and adheres to the GPL-3 LICENSE as a result.
 
 
 ## Install and use
